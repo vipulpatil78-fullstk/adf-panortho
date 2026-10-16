@@ -1,0 +1,10 @@
+{
+	"name": "kv_panortho",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://keyvault-panortho.vault.azure.net/"
+		}
+	}
+}
