@@ -1,0 +1,23 @@
+{
+	"name": "AzureSqlDatabase1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "azure-sql-panortho-db-server.database.windows.net",
+			"database": "azure_sql_panortho_db",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "root-panortho",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "kv_panortho",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "PwpolAzureSQLDB"
+			}
+		}
+	}
+}
