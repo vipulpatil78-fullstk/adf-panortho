@@ -111,7 +111,7 @@
 						"referenceName": "PanorthoParquet",
 						"type": "DatasetReference",
 						"parameters": {
-							"container": "source",
+							"container": "sink",
 							"folder": {
 								"value": "@concat(\n    activity('Get Table ID').output.firstRow.source_system,\n    '/',\n    activity('Get Table ID').output.firstRow.source_table_name,\n    variables('start_time')\n)",
 								"type": "Expression"
