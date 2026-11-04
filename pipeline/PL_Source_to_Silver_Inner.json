@@ -203,6 +203,10 @@
 			"table_id": {
 				"type": "string",
 				"defaultValue": "1"
+			},
+			"adf_run_id": {
+				"type": "string",
+				"defaultValue": "run_1"
 			}
 		},
 		"variables": {
