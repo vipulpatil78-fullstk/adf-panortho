@@ -183,7 +183,7 @@
 				"typeProperties": {
 					"notebookPath": "/adb-panortho/adb-panortho/bronze_to_silver",
 					"baseParameters": {
-						"anding_timestamp": {
+						"landing_timestamp": {
 							"value": "@variables('start_time')",
 							"type": "Expression"
 						},
@@ -202,7 +202,7 @@
 		"parameters": {
 			"table_id": {
 				"type": "string",
-				"defaultValue": "1"
+				"defaultValue": "2"
 			}
 		},
 		"variables": {
