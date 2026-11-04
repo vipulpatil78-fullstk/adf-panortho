@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-panortho"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "1018-123501-tgl1e0t7"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "azure-sql-panortho-db-server.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "azure_sql_panortho_db"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "root-panortho"
+		},
+		"kv_panortho_properties_typeProperties_baseUrl": {
+			"value": "https://keyvault-panortho.vault.azure.net/"
+		},
+		"ls_adlspanortho_properties_typeProperties_url": {
+			"value": "https://adlspanortho.dfs.core.windows.net/"
+		},
+		"ls_pg_panortho_properties_typeProperties_server": {
+			"value": "ep-bitter-art-ao2h5unz-pooler.c-2.ap-southeast-1.aws.neon.tech"
+		},
+		"ls_pg_panortho_properties_typeProperties_database": {
+			"value": "panortho_db"
+		},
+		"ls_pg_panortho_properties_typeProperties_username": {
+			"value": "neondb_owner"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
