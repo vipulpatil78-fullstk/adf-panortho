@@ -140,7 +140,21 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/adb-panortho/adb-panortho/sink_to_bronze"
+					"notebookPath": "/adb-panortho/adb-panortho/sink_to_bronze",
+					"baseParameters": {
+						"landing_timestamp": {
+							"value": "@variables('start_time')",
+							"type": "Expression"
+						},
+						"source_system": {
+							"value": "@activity('Get Table ID').output.firstRow.source_system",
+							"type": "Expression"
+						},
+						"table_name": {
+							"value": "@activity('Get Table ID').output.firstRow.bronze_table_name",
+							"type": "Expression"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -167,7 +181,17 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/adb-panortho/adb-panortho/bronze_to_silver"
+					"notebookPath": "/adb-panortho/adb-panortho/bronze_to_silver",
+					"baseParameters": {
+						"anding_timestamp": {
+							"value": "@variables('start_time')",
+							"type": "Expression"
+						},
+						"table_name": {
+							"value": "@activity('Get Table ID').output.firstRow.silver_table_name",
+							"type": "Expression"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
